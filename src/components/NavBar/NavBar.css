@@ -21,40 +21,42 @@ li {
   padding: 18px 15px;
 }
 .menu-btn {
-  margin:10px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  border: 3px solid #fff;
+  background: white;
 }
-.menu-btn__burger {
-  width: 40px;
+
+button.menu-btn__burguer {
+  width: 50px;
   height: 6px;
-  background: #fff;
+  background: #000;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   transition: all 0.5s ease-in-out;
 }
-.menu-btn__burger::before,
-.menu-btn__burger::after {
-  content: "";
+
+/*button.menu-btn__burguer::before,
+button.menu-btn__burguer::after {
+  content: '';
   position: absolute;
   width: 50px;
   height: 6px;
-  background: #fff;
+  background: #000;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
-}
-.menu-btn__burger::before {
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}*/
+button.menu-btn__burger::before {
   transform: translateY(-16px);
+  color: #000;
 }
-.menu-btn__burger::after {
+button.menu-btn__burger::after {
   transform: translateY(16px);
 }
 
